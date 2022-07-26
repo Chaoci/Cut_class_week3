@@ -1,0 +1,87 @@
+.cop-design{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .cop-design-content{
+        padding:80px 0;
+        max-width: 1300px;
+        margin: 0 auto;
+        img{
+            width: 648px;
+            height: 240px;
+        }
+        ul{
+            display: flex;
+            li{
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+        h2{
+            font-size: 48px;
+            line-height: 1.5;
+            margin-bottom: 48px;
+            color:#ffffff;
+            text-align: center;
+            font-weight: bold;
+        }
+        h3{
+            font-size: 48px;
+            line-height: 1.5;
+            font-style: italic;
+            font-weight: 900;
+            background-color: #fff;
+            color:$light-red;
+            text-align: center;
+            border-right: 1px solid lightgray;
+        }
+    }
+}
+
+//RWD AREA 
+
+@media (max-width:768px){
+    .cop-design{
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .cop-design-content{
+            img{
+                width: 100%;
+            }
+            ul{
+                flex-direction: column;
+                padding-left:36px;
+                padding-right: 36px;
+            }
+            .margin{
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .cop-design{
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .cop-design-content{
+            padding:40px 0;
+            ul{
+                flex-direction: column;
+                padding-left:13px;
+                padding-right: 13px;
+            }
+            .design1{
+                content:url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true");
+            }
+            .design2{
+                content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true");
+            }
+            h2{
+                font-size: 24px;
+            }
+        }
+    }
+}

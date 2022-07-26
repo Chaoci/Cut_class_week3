@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Rubik&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html, body {
+  margin: 0 auto;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 12px;
+}
+
+.wrap {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.header-top {
+  width: 100%;
+  background-color: #AA0601;
+  height: 80px;
+}
+.header-top .header-top-content {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.header-top .header-top-content img {
+  width: 80px;
+  height: 48px;
+  cursor: pointer;
+}
+.header-top .header-top-content ul {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.header-top .header-top-content ul li a {
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.header-top .header-top-content i {
+  display: none;
+}
+
+.header-banner {
+  height: 787px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-banner .header-banner-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+}
+.header-banner .header-banner-content .header-banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  height: 100%;
+  color: #650300;
+}
+.header-banner .header-banner-content .header-banner-text p {
+  font-size: 36px;
+  line-height: 1.5;
+}
+.header-banner .header-banner-content .header-banner-text h1 {
+  font-size: 64px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.header-banner .header-banner-content .header-banner-text button {
+  width: 104px;
+  height: 41px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+  background-color: #AA0601;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-top-content ul {
+    margin-left: 124px;
+  }
+  .header-banner {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+  }
+}
+@media (max-width: 400px) {
+  .header-top .header-top-content ul {
+    display: none;
+  }
+  .header-top .header-top-content i {
+    display: inline;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  .header-banner {
+    height: 396px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    background-size: cover;
+  }
+  .header-banner .header-banner-content .header-banner-text {
+    margin-right: 20px;
+  }
+  .header-banner .header-banner-content .header-banner-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .header-banner .header-banner-content .header-banner-text h1 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+.first-stage {
+  background-color: #FBF2F2;
+  color: #650300;
+}
+.first-stage .first-stage-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.first-stage .first-stage-content h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+}
+.first-stage .first-stage-content h3 {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.first-stage .first-stage-content p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.first-stage .first-stage-content ul {
+  display: flex;
+  margin-top: 32px;
+}
+.first-stage .first-stage-content ul li {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 24px;
+}
+.first-stage .first-stage-content img {
+  width: 80px;
+  height: 80px;
+}
+.first-stage .first-stage-content .padding {
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .first-stage .first-stage-content {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .first-stage .first-stage-content ul {
+    flex-wrap: wrap;
+  }
+  .first-stage .first-stage-content ul li {
+    width: 50%;
+    padding: 0px 36px;
+    margin-bottom: 20px;
+  }
+  .first-stage .first-stage-content ul .padding {
+    padding-right: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .first-stage .first-stage-content h2 {
+    font-size: 24px;
+  }
+  .first-stage .first-stage-content ul {
+    flex-wrap: wrap;
+  }
+  .first-stage .first-stage-content ul li {
+    width: 100%;
+    padding: 0px 36px;
+  }
+  .first-stage .first-stage-content ul .padding {
+    padding-right: 36px;
+  }
+}
+.classic-part {
+  background-color: #FFFFFF;
+}
+.classic-part .classic-part-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  color: #650300;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.classic-part .classic-part-content h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.classic-part .classic-part-content h3 {
+  color: #AA0601;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 8px;
+  text-align: center;
+}
+.classic-part .classic-part-content ul {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.classic-part .classic-part-content ul li {
+  width: 33%;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.classic-part .classic-part-content ul .margin {
+  margin-right: 0;
+}
+
+@media (max-width: 900px) {
+  .classic-part .classic-part-content h3 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .classic-part .classic-part-content ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .classic-part .classic-part-content ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 24px;
+  }
+  .classic-part .classic-part-content ul img {
+    width: 336px;
+    height: 336px;
+  }
+}
+.cop-design {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cop-design .cop-design-content {
+  padding: 80px 0;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.cop-design .cop-design-content img {
+  width: 648px;
+  height: 240px;
+}
+.cop-design .cop-design-content ul {
+  display: flex;
+}
+.cop-design .cop-design-content ul li {
+  width: 100%;
+  cursor: pointer;
+}
+.cop-design .cop-design-content h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+.cop-design .cop-design-content h3 {
+  font-size: 48px;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 900;
+  background-color: #fff;
+  color: #AA0601;
+  text-align: center;
+  border-right: 1px solid lightgray;
+}
+
+@media (max-width: 768px) {
+  .cop-design {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cop-design .cop-design-content img {
+    width: 100%;
+  }
+  .cop-design .cop-design-content ul {
+    flex-direction: column;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .cop-design .cop-design-content .margin {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .cop-design {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cop-design .cop-design-content {
+    padding: 40px 0;
+  }
+  .cop-design .cop-design-content ul {
+    flex-direction: column;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .cop-design .cop-design-content .design1 {
+    content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true");
+  }
+  .cop-design .cop-design-content .design2 {
+    content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true");
+  }
+  .cop-design .cop-design-content h2 {
+    font-size: 24px;
+  }
+}
+.customer-recommend-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.customer-recommend-content h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #650300;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.customer-recommend-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-recommend-content ul li {
+  position: relative;
+  height: 511px;
+  display: flex;
+  flex-direction: column;
+  width: 23.5%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 4px;
+  border: 1px solid #DEE2E6;
+}
+.customer-recommend-content ul .text {
+  padding: 0 16px;
+}
+.customer-recommend-content ul img {
+  width: 306px;
+}
+.customer-recommend-content ul h4 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+.customer-recommend-content ul p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.customer-recommend-content ul .date {
+  position: absolute;
+  bottom: 16px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .customer-recommend-content ul {
+    flex-wrap: wrap;
+    padding: 0 36px;
+    padding-right: 12px;
+  }
+  .customer-recommend-content ul li {
+    width: 46%;
+    margin-top: 24px;
+    margin-right: 24px;
+  }
+  .customer-recommend-content ul img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .customer-recommend-content {
+    padding: 40px 0;
+  }
+  .customer-recommend-content h2 {
+    font-size: 24px;
+  }
+  .customer-recommend-content ul {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 13px;
+  }
+  .customer-recommend-content ul li {
+    margin: 0;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .customer-recommend-content ul li img {
+    width: 100%;
+  }
+  .customer-recommend-content ul .card1 {
+    margin-top: 0;
+  }
+}
+.contact-part-content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  button {
+    margin-bottom: 40px !important;
+  }
+}
+.footer {
+  background-color: #AA0601;
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-content .fa-6x {
+  font-size: 48px;
+}
+.footer-content .footer-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.footer-content .footer-nav .footer-navbar {
+  width: 50%;
+}
+.footer-content .footer-nav .footer-navbar ul {
+  display: flex;
+  align-items: center;
+}
+.footer-content .footer-nav .footer-navbar ul li {
+  width: 100%;
+  margin-right: 48px;
+}
+.footer-content .footer-nav .footer-navbar ul li a {
+  width: 100%;
+}
+.footer-content .footer-nav .footer-logo {
+  width: 50%;
+}
+.footer-content .footer-nav .footer-logo ul {
+  display: flex;
+  justify-content: end;
+}
+.footer-content .footer-nav .footer-logo ul li {
+  margin-right: 32px;
+  cursor: pointer;
+}
+.footer-content .footer-nav .footer-logo ul .line {
+  margin-right: 0;
+}
+.footer-content .footer-contact {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.5;
+}
+.footer-content .footer-contact li {
+  margin-top: 8px;
+}
+.footer-content .footer-contact i {
+  font-size: 48px;
+  margin-right: 20px;
+}
+.footer-content .footer-copyright {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+}
+.footer-content .footer-copyright ul {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content .footer-copyright ul li {
+  margin-right: 48px;
+}
+.footer-content .footer-copyright ul .margin {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content .footer-nav .fa-6x {
+    font-size: 40px;
+  }
+  .footer-content .footer-nav .footer-navbar {
+    width: 80%;
+  }
+  .footer-content .footer-nav .footer-logo {
+    width: 20%;
+  }
+  .footer-content .footer-nav .footer-logo ul {
+    flex-wrap: wrap;
+  }
+  .footer-content .footer-nav .footer-logo ul li {
+    margin-right: 16px;
+  }
+  .footer-content .footer-copyright ul {
+    width: 50%;
+    justify-content: end;
+  }
+}
+@media (max-width: 400px) {
+  .footer-content .footer-nav {
+    margin-top: 0;
+  }
+  .footer-content .footer-nav .fa-6x {
+    font-size: 24px;
+  }
+  .footer-content .footer-nav .footer-navbar {
+    display: none;
+  }
+  .footer-content .footer-nav .footer-logo {
+    margin-top: 24px;
+    margin-bottom: -150px;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .footer-content .footer-contact {
+    font-size: 16px;
+  }
+  .footer-content .footer-contact .fa-6x {
+    font-size: 24px;
+  }
+  .footer-content .footer-copyright {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-content .footer-copyright ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-content .footer-copyright ul li {
+    margin-top: 16px;
+  }
+}/*# sourceMappingURL=all.css.map */

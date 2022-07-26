@@ -1,0 +1,150 @@
+.wrap{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+//for phone mode class
+// .nav{
+//     height: 176px;
+//     .logo{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         img{
+//             width: 80px;
+//             height: 48px;
+//             cursor: pointer;
+//         }
+//     }
+//     ul{
+//         display: flex;
+//         flex-wrap: wrap;
+//         li{
+//             width: 50%;
+//             border: 1px solid white;
+//         }
+//     }
+// }
+
+.header-top{
+    width: 100%;
+    background-color: #AA0601;
+    height: 80px;
+    .header-top-content{
+        margin: 0 auto;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        img{
+            width: 80px;
+            height: 48px;
+            cursor: pointer;
+        }
+        ul{
+            width:450px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+            li{
+                a{
+                    font-size: 20px;
+                    line-height: 1.5;
+                    width: 100%;
+                    height: 100%;
+                    color:white;
+                }
+            }
+        }
+        i{
+            display: none;
+        }
+    }
+}
+.header-banner{
+    height: 787px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .header-banner-content{
+        max-width: 1300px;
+        margin: 0 auto;
+        height: 100%;
+        .header-banner-text{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            height: 100%;
+            color:$red;
+            p{
+                font-size: 36px;
+                line-height: 1.5;
+            }
+            h1{
+                font-size: 64px;
+                line-height: 1.5;
+                font-weight: bold;
+            }   
+            button{
+                width: 104px;
+                height: 41px;
+                font-size: 20px;
+                line-height: 1.5;
+                color: white;
+                background-color:$light-red;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+//RWD AREA
+
+@media(max-width:768px){
+    .header-top-content{
+        ul{
+            margin-left: 124px;
+        }
+    }
+    .header-banner{
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    }
+}
+
+@media (max-width:400px){
+    .header-top{
+        .header-top-content{
+            ul{
+                display:none;
+            }
+            
+            i{
+                display: inline;
+                margin-right: 20px;
+                margin-top: 20px;
+                cursor: pointer;
+                color:white;
+            }
+        }
+    }
+    .header-banner{
+        height: 396px;
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+        background-size:cover;
+        .header-banner-content{
+            .header-banner-text{
+                margin-right: 20px;
+                p{
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+                h1{
+                    font-size: 24px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}

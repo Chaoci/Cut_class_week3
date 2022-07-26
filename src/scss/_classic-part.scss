@@ -1,0 +1,72 @@
+.classic-part{
+    background-color: #FFFFFF;
+    .classic-part-content{
+        max-width: 1300px;
+        margin: 0 auto;
+        color:$red;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        h2{
+            text-align: center;
+            font-size: 48px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        h3{
+            color:$light-red;
+            font-size: 48px;
+            line-height: 1.5;
+            font-weight: 900;
+            font-style: italic;
+            margin-top: 8px;
+            text-align: center;
+        }
+        ul{
+            margin-top: 48px;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 33%;
+                margin-right: 24px;
+                cursor:pointer;
+            }
+            .margin{
+                margin-right:0;
+            }
+        }
+    }
+}
+
+//RWD AREA
+@media (max-width:900px){
+    .classic-part{
+        .classic-part-content{
+            h3{
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .classic-part{
+        .classic-part-content{
+            ul{
+                flex-wrap: wrap;
+                justify-content: center;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    margin-right: 0;
+                    margin-top: 24px;
+                }
+                img{
+                    width: 336px;
+                    height: 336px;
+                }
+            }
+        }
+    }
+}
