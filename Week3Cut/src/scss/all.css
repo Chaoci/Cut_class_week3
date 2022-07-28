@@ -275,6 +275,7 @@ html, body {
   color: #650300;
   padding-top: 80px;
   padding-bottom: 80px;
+  padding: 0 12px;
 }
 .classic-part .classic-part-content h2 {
   text-align: center;
@@ -334,7 +335,7 @@ html, body {
   background-size: cover;
 }
 .cop-design .cop-design-content {
-  padding: 80px 0;
+  padding: 80px 12px;
   max-width: 1300px;
   margin: 0 auto;
 }
