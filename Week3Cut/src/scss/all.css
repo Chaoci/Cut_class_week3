@@ -490,6 +490,7 @@ html, body {
     margin: 0;
     width: 80%;
     margin-top: 16px;
+    height: 555px;
   }
   .customer-recommend-content ul li img {
     width: 100%;
@@ -511,6 +512,7 @@ html, body {
     padding: 0 13px;
   }
   .customer-recommend-content ul li {
+    height: 511px;
     margin: 0;
     width: 100%;
     margin-top: 16px;
