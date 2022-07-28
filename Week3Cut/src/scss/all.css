@@ -67,7 +67,7 @@ html, body {
 }
 
 .container {
-  padding: 0 12px;
+  margin: 0 12px;
 }
 
 .wrap {
@@ -85,6 +85,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
+  padding-left: 12px;
 }
 .header-top .header-top-content img {
   width: 80px;
@@ -472,6 +473,31 @@ html, body {
     width: 100%;
   }
 }
+@media (max-width: 550px) {
+  .customer-recommend-content {
+    padding: 40px 0;
+  }
+  .customer-recommend-content h2 {
+    font-size: 24px;
+  }
+  .customer-recommend-content ul {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13px;
+  }
+  .customer-recommend-content ul li {
+    margin: 0;
+    width: 80%;
+    margin-top: 16px;
+  }
+  .customer-recommend-content ul li img {
+    width: 100%;
+  }
+  .customer-recommend-content ul .card1 {
+    margin-top: 0;
+  }
+}
 @media (max-width: 400px) {
   .customer-recommend-content {
     padding: 40px 0;
@@ -526,7 +552,7 @@ html, body {
   color: #ffffff;
 }
 .footer-content .footer-nav .footer-navbar {
-  width: 50%;
+  width: 80%;
 }
 .footer-content .footer-nav .footer-navbar ul {
   display: flex;
@@ -534,13 +560,13 @@ html, body {
 }
 .footer-content .footer-nav .footer-navbar ul li {
   width: 100%;
-  margin-right: 48px;
+  padding-left: 24px;
 }
 .footer-content .footer-nav .footer-navbar ul li a {
   width: 100%;
 }
 .footer-content .footer-nav .footer-logo {
-  width: 50%;
+  width: 20%;
 }
 .footer-content .footer-nav .footer-logo ul {
   display: flex;
@@ -599,15 +625,23 @@ html, body {
   .footer-content .footer-nav .footer-logo {
     width: 20%;
   }
-  .footer-content .footer-nav .footer-logo ul {
-    flex-wrap: wrap;
-  }
   .footer-content .footer-nav .footer-logo ul li {
     margin-right: 16px;
   }
   .footer-content .footer-copyright ul {
     width: 50%;
     justify-content: end;
+  }
+}
+@media (max-width: 710px) {
+  .footer-content .footer-nav {
+    flex-wrap: wrap;
+  }
+  .footer-content .footer-nav .footer-navbar {
+    width: 100%;
+  }
+  .footer-content .footer-nav .footer-logo {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {

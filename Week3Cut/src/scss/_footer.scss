@@ -15,13 +15,13 @@
         justify-content: space-between;
         color:#ffffff;
         .footer-navbar{
-            width: 50%;
+            width: 80%;
             ul{
                 display: flex;
                 align-items: center;
                 li{
                     width: 100%;
-                    margin-right: 48px;
+                    padding-left: 24px;
                     a{
                         width: 100%;
                     }
@@ -29,7 +29,7 @@
             }
         }
         .footer-logo{
-            width: 50%;
+            width: 20%;
             ul{
                 display: flex;
                 justify-content: end;
@@ -93,7 +93,6 @@
             .footer-logo{
                 width: 20%;
                 ul{
-                    flex-wrap: wrap;
                     li{
                         margin-right: 16px;
                     }
@@ -104,6 +103,19 @@
             ul{
             width: 50%;
             justify-content: end;
+            }
+        }
+    }
+}
+@media (max-width:710px){
+    .footer-content{
+        .footer-nav{
+            flex-wrap: wrap;
+            .footer-navbar{
+                width: 100%;
+            }
+            .footer-logo{
+                width: 100%;
             }
         }
     }
